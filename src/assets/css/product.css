@@ -1,0 +1,361 @@
+.thumb {
+    width: 600px;
+    height: 600px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s, transform 0.2s;
+}
+.thumb:hover,
+.thumb.active {
+    opacity: 1;
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+}
+.thumb-active {
+    max-width: 100%;
+    height: 550px;
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumb-small {
+    width: 240px;
+    height: 170px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s, transform 0.2s;
+    object-fit: cover;
+    object-position: center;
+}
+
+.thumb-small:hover {
+    opacity: 1;
+}
+
+.about {
+    background-color: #1e242a;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #c1c1c1;
+}
+
+.about .description {
+    font-size: 1.2rem;
+    color: #eaeaea;
+    margin-bottom: 40px;
+}
+
+.about .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.about .text {
+    flex: 1;
+    text-align: left;
+}
+
+.about .text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.about .text p {
+    font-size: 16px;
+    color: #cbcbcb;
+}
+
+.about .image {
+    flex: 1;
+}
+
+.about .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.gallery {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+    min-height: 460px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.gallery .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.gallery .description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery .image-item {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery .image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery .image-item img:hover {
+    transform: scale(1.05);
+}
+
+.testimonials {
+    padding: 50px 0;
+    background-color: #efefef;
+    text-align: center;
+    min-height: 528px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.testimonials .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.swiper-container {
+    position: relative;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial span {
+    display: block;
+    font-size: 1rem;
+    color: #888;
+    font-style: italic;
+}
+
+.swiper-pagination {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    color: #1e242a!important;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.swiper-button-next {
+    right: 10px;
+}
+
+.swiper-button-prev {
+    left: 10px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets, 
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: var(--swiper-pagination-bottom, -5px)!important;
+    left: 50%;
+    right: 50%;
+}
+
+
+.swiper-pagination-bullet-active {
+    background: #1e242a!important;
+}
+
+
+.countdown {
+    padding: 60px 0;
+    background-color: #1e242a;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.countdown .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.countdown h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #cbcbcb;
+}
+
+.countdown p {
+    font-size: 1.2rem;
+    color: #cbcbcb;
+    margin-bottom: 30px;
+}
+
+.countdown-call-to-action {
+    display: flex;
+    flex-direction: column;
+}
+
+.timer {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.time {
+    font-size: 3rem;
+}
+
+.cta-button {
+    background-color: #ff5722;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+.cta-button:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+}
+
+.hero-welcome {
+    text-align: center;
+    height: 40px;
+    padding: 140px 0 120px;
+    background-color: #1e242a;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-welcome h2 {
+    color: #fff;
+}
+
+@media screen and (max-width: 2560px), 
+       screen and (max-width: 1440px), 
+       screen and (max-width: 1024px) {
+    .hero-banner {
+        margin: 90px 15px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .hero-banner {
+        margin: 60px 15px;
+    }
+
+    .hero-banner .thumb-active {
+        height: 420px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero-banner {
+        margin: 30px 15px;
+    }
+
+    .hero-banner .thumb-active {
+        height: 280px;
+    }
+
+    .thumb-small {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about .content {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        max-width: 290px;
+    }
+   
+}

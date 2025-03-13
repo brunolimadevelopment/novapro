@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Adicionar o link para o CSS do Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
+    <!-- Link para o CSS do Swiper (para o carrossel) -->
+    <link
+     rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+   />
+    <link rel="stylesheet" href="./src/assets/css/product.css" />
+    
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">NovaPro</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero" class="hero-banner">
+      <div class="container">
+      <div class="row">
+        <img id="main-image" src="src/assets/images/products.png" class="img-fluid img-thumbnail thumb-active" alt="Products" />
+        <div class="d-flex justify-content-center mt-3 overflow-auto">
+          <img src="src/assets/images/products.png" class="thumb-small mx-2 img-thumbnail active" alt="Products" />
+          <img src="src/assets/images/product-green.png" class="thumb-small mx-2 img-thumbnail" alt="Product green" />
+          <img src="src/assets/images/product-orange.png" class="thumb-small mx-2 img-thumbnail" alt="Product orange" />
+          <img src="src/assets/images/product-pink.png" class="thumb-small mx-2 img-thumbnail" alt="Product pink" />
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="content">
+          <div class="text">
+            <h2>About the Product</h2>
+            <p class="description">
+              Our product is the ideal solution for those seeking quality and innovation.
+              Developed with high-performance materials and cutting-edge technology,
+              it offers exceptional durability and efficiency to meet your
+              daily needs.
+            </p>
+          </div>
+          <div class="image">
+            <img src="src/assets/images/products.png" alt="Produto" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+          <h2>Product Gallery</h2>
+          <p class="description">Discover our complete gallery of supplements that will enhance your workouts, improve your performance and accelerate your results. 
+          We have a selection of high-quality products for all your needs, from proteins, amino acids, to vitamins and pre-workouts!</p>
+        <div class="grid">
+          <a href="src/assets/images/product-whey-pink.png" data-fancybox="gallery" class="image-item">
+            <img src="src/assets/images/product-whey-pink.png" alt="Product Whey Pink" />
+          </a>
+          <a href="src/assets/images/product-whey-blue.png" data-fancybox="gallery" class="image-item">
+            <img src="src/assets/images/product-whey-blue.png" alt="Product Whey Blue" />
+          </a>
+          <a href="src/assets/images/product-custom.png" data-fancybox="gallery" class="image-item">
+            <img src="src/assets/images/product-custom.png" alt="Product Custom" />
+          </a>
+          <a href="src/assets/images/product-creatine.png" data-fancybox="gallery" class="image-item">
+            <img src="src/assets/images/product-creatine.png" alt="Product Creatine" />
+          </a>
+          <a href="src/assets/images/product-kit.png" data-fancybox="gallery" class="image-item">
+            <img src="src/assets/images/product-kit.png" alt="Product Kit" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2>What our customers say</h2>
+        <div class="swiper-container overflow-hidden">
+          <div class="swiper-wrapper">
+            <!-- Testimonial 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <p>
+                  "This product has changed my life! Excellent quality and amazing results."
+                </p>
+                <span>- João Silva</span>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <p>
+                  "The experience was incredible, from the service to the use of the
+product. I highly recommend it!"
+                </p>
+                <span>- Maria Oliveira</span>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <p>
+                  "I bought it with apprehension, but I was surprised. Fast delivery and
+                  excellent product!"
+                </p>
+                <span>- Pedro Santos</span>
+              </div>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="swiper-slide">
+              <div class="testimonial">
+                <p>
+                  "Fantastic! The quality of the service and product really
+exceeded my expectations."
+                </p>
+                <span>- Ana Costa</span>
+              </div>
+            </div>
+          </div>
+          <!-- Paginação -->
+          <div class="swiper-pagination"></div>
+          <!-- Navegação (next/prev) -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown">
+      <div class="container d-flex justify-content-center flex-column align-items-center">
+        <h2>Special Offer - Last Chance!</h2>
+        <p>
+          Don't miss this unique opportunity! Take advantage of the promotion while it lasts.
+        </p>
+        <div class="countdown-call-to-action col-md-5">
+          <div id="timer" class="timer">
+            <div class="time">
+              <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+          </div>
+          <a href="https://api.whatsapp.com/send?phone=5585987745679&text=Gostou%20do%20teste?%20Chama%20no%20whatsapp%20" class="cta-button" id="cta-button" title="Enjoy Now" target="_blank">Enjoy Now</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./src/assets/javascript/product.js" defer></script>
+  </body>
+</html>

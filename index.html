@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Captura de Leads & Produto</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome para ícones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/assets/css/index.css" />
+  </head>
+  <body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">NovaPro</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seção Hero com Formulário de Captura de Leads -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-between mt-15">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-4 animate-fade-in">
+              Revolutionize your business with NovaPro
+            </h1>
+            <p class="lead mb-4 animate-fade-in">
+              Our all-in-one solution will transform the way you manage your projects and teams.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="lead-form animate-fade-in mt-3">
+              <div id="successMessage" class="success-message">
+                <strong>Thank you for your interest!</strong> We will be in touch
+                with you shortly.
+              </div>
+              <h3 class="mb-4 text-center form-title">Get started today!</h3>
+              <p class="mr-auto mb-4 text-center form-desc">
+                Fill out the form below to receive a free demo.
+              </p>
+              <form id="leadForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label text-black">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Type your name"
+                  />
+                  <div class="invalid-feedback">
+                    Please provide your full name.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label text-black">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="your@email.com"
+                  />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label text-black">Phone</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="(00) 00000-0000"
+                  />
+                  <div class="invalid-feedback">
+                    Please provide a valid phone number.
+                  </div>
+                <div class="d-grid">
+                  <button type="submit" class="btn btn-primary btn-lg mt-15">
+                    Request Demo
+                  </button>
+                </div>
+              </form>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h5>NovaPro</h5>
+            <p class="">
+              Transformando a gestão de projetos e equipes.
+            </p>
+            <div class="d-flex gap-2">
+              <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <h5>Contato</h5>
+            <ul class="list-unstyled ">
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i> Av. Paulista, 1000,
+                São Paulo - SP
+              </li>
+              <li><i class="fas fa-phone me-2"></i> (11) 99999-9999</li>
+              <li>
+                <i class="fas fa-envelope me-2"></i> contato@novapro.com.br
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="mt-4 mb-3" />
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="small  mb-0">
+              &copy; 2025 NovaPro. Todos os direitos reservados.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="#" class="text-white small me-3">Termos de Uso</a>
+            <a href="#" class="text-white small">Política de Privacidade</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./src/assets/javascript/index.js" defer></script>
+  </body>
+</html>
