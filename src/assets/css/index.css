@@ -74,14 +74,14 @@ body {
 }
 
 .btn-success {
-  background-color: var(--secondary-color);
-  border-color: var(--secondary-color);
+  background-color: #117a47; /* Verde escuro */
+  border-color: #117a47;
+}
+.btn-success:hover {
+  background-color: #0e653b;
+  border-color: #0e653b;
 }
 
-.btn-success:hover {
-  background-color: #17a673;
-  border-color: #17a673;
-}
 
 .mt-15 {
   margin-top: 40px;
